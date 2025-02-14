@@ -6,6 +6,9 @@ import { SecurityScanOutlined, BugOutlined, SafetyOutlined, RocketOutlined,
 import XSSAttack from './pages/XSSAttack';
 import SSRFAttack from './pages/SSRFAttack';
 import CombinedAttack from './pages/CombinedAttack';
+import XSSProtection from './pages/XSSProtection';
+import SSRFProtection from './pages/SSRFProtection';
+import CombinedProtection from './pages/CombinedProtection';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -230,6 +233,9 @@ const App: React.FC = () => {
               <Route path="/xss" element={<XSSAttack />} />
               <Route path="/ssrf" element={<SSRFAttack />} />
               <Route path="/combined" element={<CombinedAttack />} />
+              <Route path="/protection/xss" element={<XSSProtection />} />
+              <Route path="/protection/ssrf" element={<SSRFProtection />} />
+              <Route path="/protection/combined" element={<CombinedProtection />} />
             </Routes>
           </div>
         </Content>

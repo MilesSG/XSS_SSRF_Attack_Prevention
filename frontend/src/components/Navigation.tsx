@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from 'antd';
 import { Link, useLocation } from 'react-router-dom';
-import { ExperimentOutlined, SecurityScanOutlined, DashboardOutlined, ThunderboltOutlined } from '@ant-design/icons';
+import { ExperimentOutlined, SecurityScanOutlined, DashboardOutlined, ThunderboltOutlined, SafetyOutlined } from '@ant-design/icons';
 
 const Navigation: React.FC = () => {
   const location = useLocation();
@@ -23,19 +23,19 @@ const Navigation: React.FC = () => {
         <Menu.Item key="/ssrf">
           <Link to="/ssrf">SSRF攻击实验</Link>
         </Menu.Item>
+        <Menu.Item key="/combined">
+          <Link to="/combined">联合攻击实验</Link>
+        </Menu.Item>
       </Menu.SubMenu>
-      <Menu.Item key="/combined" icon={<ThunderboltOutlined />}>
-        <Link to="/combined">联合攻击实验</Link>
-      </Menu.Item>
-      <Menu.SubMenu key="defense" icon={<SecurityScanOutlined />} title="防护机制">
-        <Menu.Item key="/defense/xss">
-          <Link to="/defense/xss">XSS防护</Link>
+      <Menu.SubMenu key="protection" icon={<SafetyOutlined />} title="防护机制">
+        <Menu.Item key="/protection/xss">
+          <Link to="/protection/xss">XSS防护</Link>
         </Menu.Item>
-        <Menu.Item key="/defense/ssrf">
-          <Link to="/defense/ssrf">SSRF防护</Link>
+        <Menu.Item key="/protection/ssrf">
+          <Link to="/protection/ssrf">SSRF防护</Link>
         </Menu.Item>
-        <Menu.Item key="/defense/combined">
-          <Link to="/defense/combined">综合防护</Link>
+        <Menu.Item key="/protection/combined">
+          <Link to="/protection/combined">综合防护</Link>
         </Menu.Item>
       </Menu.SubMenu>
     </Menu>
