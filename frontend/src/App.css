@@ -1,0 +1,18 @@
+.layout {
+  min-height: 100vh;
+}
+
+.ant-layout-header h1 {
+  color: #1890ff;
+  font-size: 20px;
+  margin: 0;
+  line-height: 64px;
+}
+
+.ant-layout-content {
+  background: #f0f2f5;
+}
+
+.ant-layout-footer {
+  background: #fff;
+} 
