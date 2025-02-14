@@ -1,5 +1,5 @@
 {
-  "short_name": "Attack Lab",
+  "short_name": "XSS SSRF Lab",
   "name": "XSS与SSRF漏洞联合攻击实验平台",
   "icons": [
     {
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#61dafb",
+  "background_color": "#282c34"
 } 
