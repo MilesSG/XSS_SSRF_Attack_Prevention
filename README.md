@@ -100,7 +100,7 @@ npm start
 ## 功能展示 📸
 
 ### 主页面
-![主页面](docs/images/homepage.png)
+![主页面](docs/images/home.png)
 
 ### XSS攻击测试
 ![XSS攻击测试](docs/images/xss-attack.png)

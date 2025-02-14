@@ -2,6 +2,14 @@
   min-height: 100vh;
 }
 
+.ant-layout-header {
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 10;
+}
+
 .ant-layout-header h1 {
   color: #1890ff;
   font-size: 20px;
@@ -15,4 +23,116 @@
 
 .ant-layout-footer {
   background: #fff;
+  padding: 24px 50px;
+}
+
+/* 首页卡片样式 */
+.ant-card {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 24px;
+  min-height: 48px;
+}
+
+.ant-card-head-title {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 统计数字样式 */
+.ant-statistic-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* 时间线样式 */
+.ant-timeline {
+  padding: 8px 0;
+}
+
+.ant-timeline-item {
+  padding-bottom: 16px;
+}
+
+.ant-timeline-item-content {
+  margin-left: 28px;
+}
+
+/* 进度条样式 */
+.ant-progress-circle .ant-progress-text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.ant-progress-line {
+  margin-bottom: 8px;
+}
+
+/* 快速入口卡片样式 */
+.quick-link-card {
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.quick-link-card:hover {
+  transform: translateY(-2px);
+}
+
+.quick-link-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* 平台介绍样式 */
+.platform-intro ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.platform-intro li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.platform-intro li:before {
+  content: "•";
+  color: #1890ff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+  .ant-layout-content {
+    padding: 12px;
+  }
+  
+  .ant-card {
+    margin-bottom: 12px;
+  }
+  
+  .ant-statistic-title {
+    font-size: 12px;
+  }
+  
+  .ant-statistic-content {
+    font-size: 20px;
+  }
 } 
