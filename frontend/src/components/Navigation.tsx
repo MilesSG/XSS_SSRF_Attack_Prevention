@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from 'antd';
 import { Link, useLocation } from 'react-router-dom';
-import { ExperimentOutlined, SecurityScanOutlined, DashboardOutlined } from '@ant-design/icons';
+import { ExperimentOutlined, SecurityScanOutlined, DashboardOutlined, ThunderboltOutlined } from '@ant-design/icons';
 
 const Navigation: React.FC = () => {
   const location = useLocation();
@@ -11,7 +11,7 @@ const Navigation: React.FC = () => {
       theme="light"
       mode="horizontal"
       selectedKeys={[location.pathname]}
-      style={{ lineHeight: '64px' }}
+      style={{ lineHeight: '64px', flex: 1 }}
     >
       <Menu.Item key="/" icon={<DashboardOutlined />}>
         <Link to="/">首页</Link>
@@ -23,10 +23,10 @@ const Navigation: React.FC = () => {
         <Menu.Item key="/ssrf">
           <Link to="/ssrf">SSRF攻击实验</Link>
         </Menu.Item>
-        <Menu.Item key="/combined">
-          <Link to="/combined">联合攻击实验</Link>
-        </Menu.Item>
       </Menu.SubMenu>
+      <Menu.Item key="/combined" icon={<ThunderboltOutlined />}>
+        <Link to="/combined">联合攻击实验</Link>
+      </Menu.Item>
       <Menu.SubMenu key="defense" icon={<SecurityScanOutlined />} title="防护机制">
         <Menu.Item key="/defense/xss">
           <Link to="/defense/xss">XSS防护</Link>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout, Typography } from 'antd';
 import XSSAttack from './pages/XSSAttack';
 import SSRFAttack from './pages/SSRFAttack';
+import CombinedAttack from './pages/CombinedAttack';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -38,6 +39,7 @@ const App: React.FC = () => {
               } />
               <Route path="/xss" element={<XSSAttack />} />
               <Route path="/ssrf" element={<SSRFAttack />} />
+              <Route path="/combined" element={<CombinedAttack />} />
             </Routes>
           </div>
         </Content>
