@@ -19,14 +19,14 @@ const SSRFProtection: React.FC = () => {
   const protectionStats = {
     totalBlocked: 1358,
     activeRules: 12,
-    lastAttack: '2024-03-21 16:45',
+    lastAttack: '2025-02-14 11:45',
     effectiveness: 97.8,
   };
 
   const recentEvents = [
-    { time: '2024-03-21 16:45', type: '内网访问', status: 'blocked', target: 'http://192.168.1.1/admin' },
-    { time: '2024-03-21 16:30', type: '协议滥用', status: 'blocked', target: 'file:///etc/passwd' },
-    { time: '2024-03-21 16:15', type: '重定向攻击', status: 'detected', target: 'http://example.com/redirect?url=http://internal-service' },
+    { time: '2025-02-14 11:45', type: '内网访问', status: 'blocked', target: 'http://192.168.1.1/admin' },
+    { time: '2025-02-14 11:30', type: '协议滥用', status: 'blocked', target: 'file:///etc/passwd' },
+    { time: '2025-02-14 11:15', type: '重定向攻击', status: 'detected', target: 'http://example.com/redirect?url=http://internal-service' },
   ];
 
   const protectionRules = [

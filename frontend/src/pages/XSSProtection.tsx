@@ -18,14 +18,14 @@ const XSSProtection: React.FC = () => {
   const protectionStats = {
     totalBlocked: 2547,
     activeRules: 15,
-    lastAttack: '2024-03-21 15:30',
+    lastAttack: '2025-02-14 10:30',
     effectiveness: 98.5,
   };
 
   const recentEvents = [
-    { time: '2024-03-21 15:30', type: 'Reflected XSS', status: 'blocked', payload: '<script>alert(1)</script>' },
-    { time: '2024-03-21 15:25', type: 'Stored XSS', status: 'blocked', payload: '<img src="x" onerror="alert(2)">' },
-    { time: '2024-03-21 15:20', type: 'DOM XSS', status: 'detected', payload: 'javascript:alert(3)' },
+    { time: '2025-02-14 10:30', type: 'Reflected XSS', status: 'blocked', payload: '<script>alert(1)</script>' },
+    { time: '2025-02-14 10:15', type: 'Stored XSS', status: 'blocked', payload: '<img src="x" onerror="alert(2)">' },
+    { time: '2025-02-14 10:00', type: 'DOM XSS', status: 'detected', payload: 'javascript:alert(3)' },
   ];
 
   const protectionRules = [

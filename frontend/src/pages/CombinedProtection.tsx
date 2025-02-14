@@ -19,14 +19,14 @@ const CombinedProtection: React.FC = () => {
   const protectionStats = {
     totalBlocked: 856,
     activeRules: 18,
-    lastAttack: '2024-03-21 17:15',
+    lastAttack: '2025-02-14 12:15',
     effectiveness: 99.2,
   };
 
   const recentEvents = [
-    { time: '2024-03-21 17:15', type: 'XSS+SSRF', status: 'blocked', details: 'XSS注入 -> SSRF请求内网服务' },
-    { time: '2024-03-21 17:00', type: 'XSS链式', status: 'blocked', details: 'DOM XSS -> 存储型XSS' },
-    { time: '2024-03-21 16:45', type: 'SSRF链式', status: 'detected', details: 'URL重定向 -> 协议利用' },
+    { time: '2025-02-14 12:15', type: 'XSS+SSRF', status: 'blocked', details: 'XSS注入 -> SSRF请求内网服务' },
+    { time: '2025-02-14 12:00', type: 'XSS链式', status: 'blocked', details: 'DOM XSS -> 存储型XSS' },
+    { time: '2025-02-14 11:45', type: 'SSRF链式', status: 'detected', details: 'URL重定向 -> 协议利用' },
   ];
 
   const protectionRules = [
